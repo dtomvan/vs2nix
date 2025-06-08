@@ -1,11 +1,11 @@
 # vs2nix
 
-Ports the 100 (could become more but I don't want to be a nuisance to the devs
+Ports the 400 (could become more but I don't want to be a nuisance to the devs
 simply because I want FODs) most popular (all-time downloads) Vintagestory mods
 to nix. For use with the WIP [vintagestory nixos module](https://github.com/NixOS/nixpkgs/pull/414845).
 
 As is that project, this one is very much a WIP. Don't use yet. Mod
-dependencies aren't implemented (and might not exist in the top 100).
+dependencies aren't implemented (and might not exist in the top 400).
 
 ## Usage
 

@@ -19,7 +19,8 @@
                     "github.com/dtomvan/vs2nix"
                 ]
 
-                let num_mods = 100
+                # more or less 10k downloads or more
+                let num_mods = 400
 
                 # HACK: idk if this is the right way to do fallbacks in nu
                 http get --headers $headers "https://mods.vintagestory.at/api/mods?orderby=downloads"
@@ -46,7 +47,7 @@
               '';
           meta = {
             inherit mainProgram;
-            description = "Update sources.json (downloads 135 MB across 100 mods)";
+            description = "Update sources.json (downloads ~600 MB across 400 mods)";
           };
         };
     };
