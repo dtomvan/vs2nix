@@ -21,7 +21,7 @@
 
                 let num_mods = 100
 
-                # HACK: idk if this is the right way to do callbacks in nu
+                # HACK: idk if this is the right way to do fallbacks in nu
                 http get --headers $headers "https://mods.vintagestory.at/api/mods?orderby=downloads"
                     | get mods
                     | take $num_mods
