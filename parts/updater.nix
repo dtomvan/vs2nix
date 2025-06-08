@@ -9,7 +9,7 @@
         {
           type = "app";
           program =
-            pkgs.writeNuBin mainProgram
+            pkgs.writers.writeNuBin mainProgram
               # nu
               ''
                 # let developers know it's me, so they can find me if they don't like what I'm
