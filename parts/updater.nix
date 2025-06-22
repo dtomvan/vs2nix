@@ -31,13 +31,14 @@
                     | filter { |mod| $mod.mod?.releases?.0?.modidstr != null }
                     | each { |mod| $mod.mod }
                     | each { |mod| try { {
-                        name: $mod.releases?.0?.filename?,
                         pname: $mod.releases?.0?.modidstr,
-                        version: $mod.releases?.0?.modversion	,
+                        version: $mod.releases?.0?.modversion,
                         description: $mod.name?,
                         url: $mod.releases?.0?.mainfile?,
                         hash: (
                             nix store prefetch-file --json $mod.releases?.0?.mainfile?
+                              # sanitize the name somewhat to hopefully avoid more errors
+                              --name $'($mod.releases?.0?.modidstr)-($mod.releases?.0?.modversion).zip'
                             | from json
                             | get hash
                         )
