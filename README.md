@@ -7,6 +7,13 @@ to nix. For use with the WIP [vintagestory nixos module](https://github.com/NixO
 As is that project, this one is very much a WIP. Don't use yet. Mod
 dependencies aren't implemented (and might not exist in the top 400).
 
+> [!warn] DISCLAIMER
+> If your mod is low in the top 400, it might get _pushed out on the next
+> update_. This is intended because I don't plan on adding the entire catalogue
+> anytime soon. That would require finding some way to only update certain mods
+> when needed, whereas currently I do it "all at once". See for the
+> implementation of the updater `parts/updater.nix`.
+
 ## Usage
 
 In a flake:
