@@ -35,7 +35,31 @@ In a flake:
 ```
 
 Then, one could run `vintagestory-server --addModPath $(nix build .#myModsDir)`.
-In the future there will be support for `services.vintagestory.mods = [];`.
+
+For NixOS, you should import `vs2nix.nixosModules.default` and then you can set something like:
+
+```nix
+let
+  host = "127.0.0.1";
+  port = 42420;
+in
+{
+  services.vintagestory = {
+    enable = true;
+    inherit host port;
+    extraFlags = [
+      "--addModPath"
+      (builtins.toString (inputs.vs2nix.legacyPackages.x86_64-linux.makeModsDir "my-mods" (mods: with mods; [
+        primitivesurvival
+        carryon
+        xskills
+      ])))
+    ];
+  };
+}
+```
+
+You can then access the admin console with `vintagestory-admin`.
 
 
 ## Updating
