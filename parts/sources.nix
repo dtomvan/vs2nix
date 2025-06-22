@@ -7,9 +7,9 @@
         lib.importJSON
         (lib.map (
           source:
-          lib.nameValuePair source.id (
+          lib.nameValuePair source.pname (
             pkgs.fetchurl {
-              inherit (source) name url hash;
+              inherit (source) pname version url hash;
               meta = { inherit (source) description; };
             }
           )
