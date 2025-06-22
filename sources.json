@@ -1190,13 +1190,6 @@
     "hash": "sha256-VW/jhe7dj24c1pR04kvKjTtx5e1CDI7Qe5LpXZHgEkk="
   },
   {
-    "name": "VS_ModsUpdater.v2.1.3_Windows.zip",
-    "id": null,
-    "description": "ModsUpdater",
-    "url": "https://moddbcdn.vintagestory.at/VS_ModsUpdater.v2.1._bc4bab6922fba922a046b9482af05ddc.zip?dl=VS_ModsUpdater.v2.1.3_Windows.zip",
-    "hash": "sha256-kDKpVtIP9TwdXgzH6nYzEE4LLSKwFr2HqkW3IKLLtoI="
-  },
-  {
     "name": "VanillaPlusV1.3.5.zip",
     "id": "Vanilla_PlusWorldGen",
     "description": "VanillaPlus WorldGen",
