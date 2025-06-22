@@ -16,7 +16,11 @@
         enable = lib.mkEnableOption "Vintagestory server";
         package = lib.mkPackageOption pkgs "vintagestory" { };
 
-        openFirewall = lib.mkEnableOption "open the firewall on the specified port";
+        openFirewall = lib.mkOption {
+          description = "open the firewall on the specified port";
+          default = false;
+          type = lib.types.bool;
+        };
 
         host = lib.mkOption {
           description = "The address that the server will bind to";
@@ -28,7 +32,7 @@
         port = lib.mkOption {
           description = "The port that the server will bind to";
           default = 42420;
-          type = lib.types.ints.between 1 65535;
+          type = lib.types.port;
         };
 
         maxClients = lib.mkOption {
@@ -64,14 +68,21 @@
           wantedBy = [ "multi-user.target" ];
           after = [ "network.target" ];
 
-          script = ''
-            ${lib.getExe' cfg.package "vintagestory-server"} \
-              ${lib.optionalString (cfg.host != null) "--ip ${cfg.host}"} \
-              --port ${builtins.toString cfg.port} \
-              --maxclients ${builtins.toString cfg.maxClients} \
-              --dataPath /var/lib/${cfg.dataPath} \
-              ${lib.concatStringsSep " " cfg.extraFlags}
-          '';
+          script =
+            let
+              # NOTE: casing is inconsistent in the server CLI, so this is
+              # intentional
+              opts = {
+                inherit (cfg) port dataPath;
+                ip = cfg.host;
+                maxclients = builtins.toString cfg.maxClients;
+              };
+            in
+            ''
+              ${lib.getExe' cfg.package "vintagestory-server"} \
+                ${lib.cli.toGNUCommandLineShell opts} \
+                ${lib.concatStringsSep " " cfg.extraFlags}
+            '';
 
           serviceConfig = {
             StateDirectory = cfg.dataPath;
@@ -113,8 +124,8 @@
           '')
         ];
 
-        networking.firewall.allowedUDPPorts = lib.optionals cfg.openFirewall [ cfg.port ];
-        networking.firewall.allowedTCPPorts = lib.optionals cfg.openFirewall [ cfg.port ];
+        networking.firewall.allowedUDPPorts = lib.optional cfg.openFirewall cfg.port;
+        networking.firewall.allowedTCPPorts = lib.optional cfg.openFirewall cfg.port;
       };
 
       meta.maintainers = with lib.maintainers; [ dtomvan ];
