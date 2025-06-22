@@ -68,6 +68,17 @@ in
 
 You can then access the admin console with `vintagestory-admin`.
 
+## `vintagestory` and `vintagestory-beta` package
+
+I've added two new packages, in order to use the latest prerelease version of
+Vintagestory easily. Also I'll try to push `vintagestory` updates ASAP whereas
+they'd need a relatively lengthy review process in order to get pushed into the
+central `nixpkgs` repo.
+
+Just `nix run github:dtomvan/vs2nix#vintagestory-beta` to try the beta (back up
+your savefiles!). You can't have both installed at the same time due to file
+collisions as of now.
+
 
 ## Updating
 Just `nix run`.
