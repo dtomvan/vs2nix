@@ -28,6 +28,7 @@
                     | take $num_mods
                     | par-each { |mod| http get --headers $headers $'https://mods.vintagestory.at/api/mod/($mod.modid)' }
                     | filter { |mod| $mod.mod?.releases?.0? != null }
+                    | filter { |mod| $mod.mod?.releases?.0?.modidstr != null }
                     | each { |mod| $mod.mod }
                     | each { |mod| try { {
                         name: $mod.releases?.0?.filename?,
