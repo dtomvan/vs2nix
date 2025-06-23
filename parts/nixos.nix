@@ -73,7 +73,8 @@
               # NOTE: casing is inconsistent in the server CLI, so this is
               # intentional
               opts = {
-                inherit (cfg) port dataPath;
+                inherit (cfg) port;
+                dataPath = "/var/lib/${cfg.dataPath}";
                 ip = cfg.host;
                 maxclients = builtins.toString cfg.maxClients;
               };
