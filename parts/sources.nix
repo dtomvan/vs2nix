@@ -9,7 +9,7 @@
           source:
           lib.nameValuePair source.pname (
             pkgs.fetchurl {
-              inherit (source) pname version url hash;
+              inherit (source) url hash;
               # append .zip so VS can recognize it
               name = "${source.pname}-${source.version}.zip";
               meta = { inherit (source) description; };
