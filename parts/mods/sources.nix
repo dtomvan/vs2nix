@@ -24,7 +24,6 @@
 
       legacyPackages = {
         mods = sources;
-        allMods = pkgs.linkFarmFromDrvs "all-vintagestory-mods" (lib.attrValues sources);
         # usage: makeModsDir "my-modpack" (mods: with mods; [ carryon medievalexpansion spyglass ])
         makeModsDir = name: f: pkgs.linkFarmFromDrvs name (f sources);
       };
