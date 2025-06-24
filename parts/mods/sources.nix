@@ -3,7 +3,7 @@
     { pkgs, ... }:
     let
       inherit (pkgs) lib;
-      sources = lib.pipe ../sources.json [
+      sources = lib.pipe ../../sources.json [
         lib.importJSON
         (lib.map (
           source:
