@@ -33,7 +33,7 @@ In a flake:
   outputs = { self, nixpkgs, vs2nix }: let
     system = "x86_64-linux";
   in {
-    packages.${system}.myModsDir = vs2nix.legacyPackages.${system}.makeModsDir "my-modpack-3000" (mods: with mods; [
+    packages.${system}.myModsDir = vs2nix.legacyPackages.${system}.makeVintageStoryModsDir "my-modpack-3000" (mods: with mods; [
       # run `nix flake show github:dtomvan/vs2nix` for the names
       primitivesurvival
       betterruins
@@ -58,7 +58,7 @@ in
     inherit host port;
     extraFlags = [
       "--addModPath"
-      (builtins.toString (inputs.vs2nix.legacyPackages.x86_64-linux.makeModsDir "my-mods" (mods: with mods; [
+      (builtins.toString (inputs.vs2nix.legacyPackages.x86_64-linux.makeVintageStoryModsDir "my-mods" (mods: with mods; [
         primitivesurvival
         carryon
         xskills
