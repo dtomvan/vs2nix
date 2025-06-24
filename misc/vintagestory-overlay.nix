@@ -1,11 +1,14 @@
 { pkgs, ... }:
 let
-  wrapperFlags = pkgs.lib.trim ''
-    --prefix LD_LIBRARY_PATH : "''${runtimeLibs[@]}" \
-    --set-default mesa_glthread true \
-    # used for 1.21.0-pre.1, see https://github.com/anegostudios/VintageStory-Issues/issues/6086
-    --set XDG_SESSION_TYPE x11
-  '';
+  wrapperFlags = pkgs.lib.trim (
+    ''
+      --prefix LD_LIBRARY_PATH : "''${runtimeLibs[@]}" \
+      --set-default mesa_glthread true \
+    '' # used for 1.21.0-pre.1, see https://github.com/anegostudios/VintageStory-Issues/issues/6086
+    + ''
+      --set XDG_SESSION_TYPE x11
+    ''
+  );
 
   # dotnet isn't overridable yet, so just do it like this right now
   makePrefixup = dotnet: ''
