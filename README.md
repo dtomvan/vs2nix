@@ -7,6 +7,9 @@ to nix. For use with the WIP [vintagestory nixos module](https://github.com/NixO
 As is that project, this one is very much a WIP. Don't use yet. Mod
 dependencies aren't implemented (and might not exist in the top 400).
 
+Also, if you do dare to use this, expect to read this repo's source code.
+I haven't documented, say, the nixos module at all yet.
+
 > [!WARNING]
 > **DISCLAIMER**
 >
