@@ -2,10 +2,11 @@
 
 Ports the 400 (could become more but I don't want to be a nuisance to the devs
 simply because I want FODs) most popular (all-time downloads) Vintagestory mods
-to nix. For use with the WIP [vintagestory nixos module](https://github.com/NixOS/nixpkgs/pull/414845).
+to nix. Also includes latest vintagestory stable and pre-releases, along with
+[Rustique](https://github.com/Tekunogosu/Rustique), a mod manager for Vintagestory.
 
-As is that project, this one is very much a WIP. Don't use yet. Mod
-dependencies aren't implemented (and might not exist in the top 400).
+This project is very much a WIP. Don't use yet. Mod dependencies aren't
+implemented (and might not exist in the top 400).
 
 Also, if you do dare to use this, expect to read this repo's source code.
 I haven't documented, say, the nixos module at all yet.
@@ -84,6 +85,34 @@ Just `nix run github:dtomvan/vs2nix#vintagestory-beta` to try the beta (back up
 your savefiles!). You can't have both installed at the same time due to file
 collisions as of now.
 
+NB: for the `github:dtomvan/vs2nix#vintagestory` package, you'd need to run
+with `NIXPKGS_ALLOW_INSECURE=1` and `--impure` for now, until 1.21 becomes
+stable, since it uses dotnet 7.
 
-## Updating
+### Installing Vintagestory/Rustique from this repo on NixOS
+If you've imported the flake as an input like above, you can add an overlay:
+
+```nix
+outputs = { nixpkgs, vs2nix, ... }: let
+  pkgs = import nixpkgs {
+    overlays = [
+      vs2nix.overlay # or .overlays.default or .overlays.vs2nix
+    ];
+    config = {
+      allowUnfree = true;
+      permittedInsecurePackages = [ "dotnet-runtime-7.0.20" ]; # for 1.20 or older
+    };
+  };
+in {
+  nixosConfigurations.alice = nixpkgs.lib.nixosSystem {
+    inherit pkgs;
+    modules = [
+      ({ pkgs, ... }: { environment.systemPackages = with pkgs; [ vintagestory-beta rustique ]; })
+      ./configuration.nix
+    ];
+  };
+};
+```
+
+## Updating mods
 Just `nix run`.
