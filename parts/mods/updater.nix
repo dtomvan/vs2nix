@@ -30,19 +30,24 @@
                     | filter { |mod| $mod.mod?.releases?.0? != null }
                     | filter { |mod| $mod.mod?.releases?.0?.modidstr != null }
                     | each { |mod| $mod.mod }
-                    | each { |mod| try { {
-                        pname: $mod.releases?.0?.modidstr,
-                        version: $mod.releases?.0?.modversion,
-                        description: $mod.name?,
-                        url: $mod.releases?.0?.mainfile?,
-                        hash: (
-                            nix store prefetch-file --json $mod.releases?.0?.mainfile?
-                              # sanitize the name somewhat to hopefully avoid more errors
-                              --name $'($mod.releases?.0?.modidstr)-($mod.releases?.0?.modversion).zip'
-                            | from json
-                            | get hash
-                        )
-                    } } catch { null } }
+                    | each { |mod| try {
+                        let latest = $mod.releases?.0?
+                        let url = $latest.mainfile? | url parse | reject query params | url join 
+
+                        {
+                            pname: $latest.modidstr,
+                            version: $latest.modversion,
+                            description: $mod.name?,
+                            url: $url,
+                            hash: (
+                                nix store prefetch-file --json $url
+                                  # sanitize the name somewhat to hopefully avoid more errors
+                                  --name $'($latest.modidstr)-($latest.modversion).zip'
+                                | from json
+                                | get hash
+                            )
+                        } 
+                    } catch { null } }
                     | filter { |mod| $mod != null }
                     | sort-by pname
                     | to json
