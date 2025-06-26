@@ -162,10 +162,10 @@
   },
   {
     "pname": "ancienttools",
-    "version": "1.6.0-pre.3",
+    "version": "1.5.25",
     "description": "Ancient Tools",
-    "url": "https://moddbcdn.vintagestory.at/AncientTools_V1.6.0-_28ed7cb473f614b11a224ba47a18cdba.zip",
-    "hash": "sha256-FnzS3Knqxb4Mqvp6O6dYAxyHhVhSIrXQQvALU5VIo84="
+    "url": "https://moddbcdn.vintagestory.at/AncientTools_V1.5.25_975e29db6432957c3261b0109af6745d.zip",
+    "hash": "sha256-lA9XE8csywixyzKSxgZOY7Hb9N8bR+K7CJMf73oVHAo="
   },
   {
     "pname": "animalcages",
@@ -336,6 +336,13 @@
     "hash": "sha256-BBD2exlidq7Kd+3tVVecYDielWIzc884e4/vK2nqNoI="
   },
   {
+    "pname": "betterjonasdevicesfixed",
+    "version": "2.0.2",
+    "description": "BetterJonasDevices-Fixed",
+    "url": "https://moddbcdn.vintagestory.at/BetterJonasDevices-F_7e7ee98a2d1a1576b5831b5680b98ff6.zip",
+    "hash": "sha256-a2zkZQ4jLHtCPw7lnnR0yiY1AGfr2s0F8JvRXyNaqvs="
+  },
+  {
     "pname": "betterloot",
     "version": "1.1.4",
     "description": "Better Loot",
@@ -344,10 +351,10 @@
   },
   {
     "pname": "betterruins",
-    "version": "0.5.0-pre.1",
+    "version": "0.4.14",
     "description": "BetterRuins",
-    "url": "https://moddbcdn.vintagestory.at/BetterRuinsv0.5.0-pr_030602a16a94a79faeb44e6cf4deede7.zip",
-    "hash": "sha256-PasjdXXwuqFR1O/EcYNxtHj1jbwTwACYH3aiYuPj1gI="
+    "url": "https://moddbcdn.vintagestory.at/BetterRuinsv0.4.14_79eddc0751d13f03105d4cb0180bd3ca.zip",
+    "hash": "sha256-aDFrBa1pN0gc0SpuiMynO19L4BCbogtBpKtFnao+G8w="
   },
   {
     "pname": "bettersticks",
@@ -420,13 +427,6 @@
     "hash": "sha256-XPk2XfjH1HqlT6Z3pksHprIST2tedNPEjPV2W1bsBFc="
   },
   {
-    "pname": "brickmold",
-    "version": "1.2.0",
-    "description": "Brick and Shingles Mold",
-    "url": "https://moddbcdn.vintagestory.at/BrickMold_1.2.0_8c62e72d24a9f05f40bf04566058f4b4.zip",
-    "hash": "sha256-mFbZxDzysLMns+lq0xZIOd5YUaRxXbzVGNIRXorcuUY="
-  },
-  {
     "pname": "bugnetcompatibility",
     "version": "1.0.1",
     "description": "Bug Net Compatibility",
@@ -441,11 +441,11 @@
     "hash": "sha256-iP4D9hJS2eVQSX9mjwdEQRm2UDaLIVbAN5wth/OfJQw="
   },
   {
-    "pname": "bullseyecontinued",
-    "version": "3.0.0-pre.9",
+    "pname": "bullseye-continued",
+    "version": "2.5.8",
     "description": "Bullseye",
-    "url": "https://moddbcdn.vintagestory.at/bullseyecontinued_3._9c6bf8cd708399af3b9fd4450becf35b.zip",
-    "hash": "sha256-DIisJVK1cE7pLabnS17/b9IlX5qFbAdBcEcDUdiXIOo="
+    "url": "https://moddbcdn.vintagestory.at/Bullseye_2.5.8_050eae7128f2748156a42574c3c666e9.zip",
+    "hash": "sha256-vfsY8fewy5s81IuSpMi2pTiXxfEK6hxsUy5F9ibnfq0="
   },
   {
     "pname": "butchering",
@@ -1002,10 +1002,10 @@
   },
   {
     "pname": "feverstonewilds",
-    "version": "1.5.0-rc.2",
+    "version": "1.4.5",
     "description": "Feverstone Wilds",
-    "url": "https://moddbcdn.vintagestory.at/feverstonewilds_1.5._262d9997b3f4dd3a849f4bf5a8053dc9.zip",
-    "hash": "sha256-U7E4W3JYLclC3YagIcp8IdozOq8DqYRkAm9m3sIjHm0="
+    "url": "https://moddbcdn.vintagestory.at/FeverstoneWilds-v1.4_c7ee7a13aca1ab41bb0cd45b6b133773.zip",
+    "hash": "sha256-BOGPo7JtkYk4LL32IcrbrkE6V8syCaRagt3+nVLCAOk="
   },
   {
     "pname": "fieldsandplateaus",
@@ -1317,10 +1317,10 @@
   },
   {
     "pname": "indappledgroves",
-    "version": "2.1.2-rc.1",
+    "version": "2.1.1",
     "description": "In Dappled Groves",
-    "url": "https://moddbcdn.vintagestory.at/InDappledGroves-1.20_ab828aa8eeed322f713f5769feadb636.zip",
-    "hash": "sha256-5cxJfN6NsyM9qI3SyqorG/+YhZ0t79g9cNyfW+VQ9Fs="
+    "url": "https://moddbcdn.vintagestory.at/InDappledGroves-1.20_93d29c3613509708675f631dd7fcfae7.zip",
+    "hash": "sha256-qapF2cWKjIE+OgCbVC8dRQBlLxgYRdGz9W7pvSw7j/8="
   },
   {
     "pname": "iniidae",
@@ -1576,10 +1576,10 @@
   },
   {
     "pname": "metalrecovery",
-    "version": "0.1.19-pre.1",
+    "version": "0.1.17",
     "description": "Anvil Metal Recovery",
-    "url": "https://moddbcdn.vintagestory.at/AnvilMetalRecovery_V_f5a1299cd564f41713a797867e6380e4.zip",
-    "hash": "sha256-23kpVas6TKflEEsc2GYvwr2ozdKmiSVaqVtr5oOHXU4="
+    "url": "https://moddbcdn.vintagestory.at/AnvilMetalRecovery_V_e5191e302d6889876c87b088c7c767d1.zip",
+    "hash": "sha256-OpUdFadXhy2QxUxjSJu0jqJklGmmZJiZgSoC9Mtz434="
   },
   {
     "pname": "metaltongs",
@@ -2087,10 +2087,10 @@
   },
   {
     "pname": "smithingplus",
-    "version": "1.6.0-rc.2",
+    "version": "1.5.7",
     "description": "Smithing Plus",
-    "url": "https://moddbcdn.vintagestory.at/smithingplus_1.6.0-r_b46bc6f65c6ec77886e049630ba8fa4b.zip",
-    "hash": "sha256-yXa7tNxb71twvLASRymm64ujAvkTDT1SSUcnqt1D720="
+    "url": "https://moddbcdn.vintagestory.at/smithingplus_1.5.7_f110473cf9119e0598c13beab8501f03.zip",
+    "hash": "sha256-Cf8rClV+iuk5dwlyZ2UpDaIrC7NX8ithXvjoGpCdGAQ="
   },
   {
     "pname": "somethinginthewater",
@@ -2311,10 +2311,10 @@
   },
   {
     "pname": "thebasics",
-    "version": "5.1.0-rc.2",
+    "version": "5.0.1",
     "description": "The Basics - Roleplay (RP) Proximity Chat and more!",
-    "url": "https://moddbcdn.vintagestory.at/thebasics_5.1.0_rc.2_02fd2424d08ea47a68b84a8da4e6d0a8.zip",
-    "hash": "sha256-KKjEsHLGIpLP5GHoVIaI+TeR0a0MlWOtl3cyUiaMNMM="
+    "url": "https://moddbcdn.vintagestory.at/thebasics_V5.0.1_1afb1a7f7868adafa2726b717959cd40.zip",
+    "hash": "sha256-ABRsUrIGQ1VS+669gXcQsD7d6qY+CefCdbwdMfbvbfw="
   },
   {
     "pname": "thecritterpack",
@@ -2597,13 +2597,6 @@
     "hash": "sha256-oJ2HEHpy8PLzKfD0n9VLiiYwboNU9jvrxfQUZyEm+HI="
   },
   {
-    "pname": "vsroleplayclasses",
-    "version": "1.16.5-rc.2",
-    "description": "vsroleplayclasses",
-    "url": "https://moddbcdn.vintagestory.at/vsroleplayclasses_v1_71d30e005f5982ef19c637018378577c.zip",
-    "hash": "sha256-mdTQUXV5aaXNjEF4hTtgfL3zLzwjeShgRfWFAMJ2BhY="
-  },
-  {
     "pname": "vsvillage",
     "version": "2.0.0",
     "description": "VS Village",
@@ -2780,10 +2773,10 @@
   },
   {
     "pname": "zeekea",
-    "version": "1.0.1-pre.2",
+    "version": "1.0.0",
     "description": "ZEEkea",
-    "url": "https://moddbcdn.vintagestory.at/zeekea_1.19.8-1.0.1-_becb72c876f37463aa07dae45c96ea91.zip",
-    "hash": "sha256-83t5+L6cJiWVQCJgH5e+opblQ3KJN61N9kc4Tf7G0Rc="
+    "url": "https://moddbcdn.vintagestory.at/zeekea_1.0.0_6712e25baf2cf88cf7d75370b5998b3f.zip",
+    "hash": "sha256-V91W8GBRUzW0O6KKdyZIRJf8iA/uoBN7d8etpEakayo="
   },
   {
     "pname": "zoombuttonreborn",
