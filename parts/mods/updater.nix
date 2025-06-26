@@ -27,11 +27,17 @@
                     | get mods
                     | take $num_mods
                     | par-each { |mod| http get --headers $headers $'https://mods.vintagestory.at/api/mod/($mod.modid)' }
-                    | filter { |mod| $mod.mod?.releases?.0? != null }
-                    | filter { |mod| $mod.mod?.releases?.0?.modidstr != null }
+                    | filter { |mod| $mod.mod?.releases?.0?.modidstr? != null }
                     | each { |mod| $mod.mod }
                     | each { |mod| try {
-                        let latest = $mod.releases?.0?
+                        # The API does not expose something like
+                        # `isPrerelease`, but this seems to be sorta the way
+                        # the frontend handles it anyways
+                        let latest = $mod.releases? 
+                          | where modversion? != null
+                          | where not ($it.modversion | str contains pre) 
+                          | where not ($it.modversion | str contains rc)
+                          | first
                         let url = $latest.mainfile? | url parse | reject query params | url join 
 
                         {
