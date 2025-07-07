@@ -85,10 +85,6 @@ Just `nix run github:dtomvan/vs2nix#vintagestory-beta` to try the beta (back up
 your savefiles!). You can't have both installed at the same time due to file
 collisions as of now.
 
-NB: for the `github:dtomvan/vs2nix#vintagestory` package, you'd need to run
-with `NIXPKGS_ALLOW_INSECURE=1` and `--impure` for now, until 1.21 becomes
-stable, since it uses dotnet 7.
-
 ### Installing Vintagestory/Rustique from this repo on NixOS
 If you've imported the flake as an input like above, you can add an overlay:
 
@@ -100,7 +96,6 @@ outputs = { nixpkgs, vs2nix, ... }: let
     ];
     config = {
       allowUnfree = true;
-      permittedInsecurePackages = [ "dotnet-runtime-7.0.20" ]; # for 1.20 or older
     };
   };
 in {
