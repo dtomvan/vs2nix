@@ -14,7 +14,7 @@
               ''
                 # from https://gist.github.com/nome/8ec70fa3cfe3b2a1bf575c9339a4b9b3
                 export def difference [a: list<any>, b: list<any>]: nothing -> list<any> {
-                  $a | filter {|x| $x not-in $b }
+                  $a | where {|x| $x not-in $b }
                 }
 
                 # this is hacky because IDK nu idioms
@@ -29,7 +29,7 @@
 
                 let inits = difference $newnames $oldnames
                 let drops = difference $oldnames $newnames 
-                let updates = $oldfile | join $newfile pname | filter { |x| $x.version != $x.version_ }
+                let updates = $oldfile | join $newfile pname | where { |x| $x.version != $x.version_ }
 
                 let inittext = $inits 
                     | each { |x| 

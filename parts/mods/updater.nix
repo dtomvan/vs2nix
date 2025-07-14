@@ -27,7 +27,7 @@
                     | get mods
                     | take $num_mods
                     | par-each { |mod| http get --headers $headers $'https://mods.vintagestory.at/api/mod/($mod.modid)' }
-                    | filter { |mod| $mod.mod?.releases?.0?.modidstr? != null }
+                    | where { |mod| $mod.mod?.releases?.0?.modidstr? != null }
                     | each { |mod| $mod.mod }
                     | each { |mod| try {
                         # The API does not expose something like
@@ -54,7 +54,7 @@
                             )
                         } 
                     } catch { null } }
-                    | filter { |mod| $mod != null }
+                    | where { |mod| $mod != null }
                     | sort-by pname
                     | to json
                     | save --force $'(pwd)/sources.json'
