@@ -1,23 +1,5 @@
 { pkgs, ... }:
 let
-  dotnet = pkgs.dotnet-runtime_8;
-
-  runtimeConfigName = "Vintagestory.runtimeconfig.json";
-  patchedRuntimeConfig = builtins.toFile runtimeConfigName ''
-    {
-      "runtimeOptions": {
-        "tfm": "net8.0",
-        "framework": {
-          "name": "Microsoft.NETCore.App",
-          "version": "${dotnet.version}"
-        },
-        "configProperties": {
-          "System.Reflection.Metadata.MetadataUpdater.IsSupported": false
-        }
-      }
-    }
-  '';
-
   wrapperFlags = pkgs.lib.trim (
     ''
       --prefix LD_LIBRARY_PATH : "''${runtimeLibs[@]}" \
@@ -29,7 +11,7 @@ let
   );
 
   # dotnet isn't overridable yet, so just do it like this right now
-  preFixup = ''
+  makePrefixup = dotnet: ''
     makeWrapper ${pkgs.lib.getExe dotnet} $out/bin/vintagestory \
       ${wrapperFlags} \
       --add-flags $out/share/vintagestory/Vintagestory.dll
@@ -42,20 +24,27 @@ let
       local filename="$(basename -- "$file")"
       ln -sf "$filename" "''${file%/*}"/"''${filename,,}"
     done
-
-    cp ${patchedRuntimeConfig} $out/share/vintagestory/${runtimeConfigName}
   '';
 
-  vintagestory = pkgs.vintagestory.overrideAttrs {
-    inherit preFixup;
-  };
+  vintagestory = pkgs.vintagestory.overrideAttrs (
+    final: prev: {
+      version = "1.20.12";
+
+      src = pkgs.fetchzip {
+        url = "https://cdn.vintagestory.at/gamefiles/stable/vs_client_linux-x64_${final.version}.tar.gz";
+        hash = "sha256-GlxBpnQBk1yZfh/uPK83ODrwn/VoORA3gGkvcXy+nV8=";
+      };
+
+      preFixup = makePrefixup pkgs.dotnet-runtime_7;
+    }
+  );
 
   vintagestory-beta = pkgs.vintagestory.overrideAttrs (
     final: prev: {
       version = "1.21.0-pre.2";
 
       buildInputs =
-        (prev.buildInputs or [ ])
+        (prev.buildInputs or [])
         ++ (with pkgs; [
           wayland
         ]);
@@ -65,7 +54,7 @@ let
         hash = "sha256-KxOVEUvVLsSWptWMVpb2JhxtrCzQMWYCb1tkfUDZWLg=";
       };
 
-      inherit preFixup;
+      preFixup = makePrefixup pkgs.dotnet-runtime_8;
     }
   );
 in
