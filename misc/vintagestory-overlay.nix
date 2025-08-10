@@ -41,7 +41,7 @@ let
 
   vintagestory-beta = pkgs.vintagestory.overrideAttrs (
     final: prev: {
-      version = "1.21.0-pre.2";
+      version = "1.21.0-rc.3";
 
       buildInputs =
         (prev.buildInputs or [])
@@ -50,8 +50,8 @@ let
         ]);
 
       src = pkgs.fetchzip {
-        url = "https://cdn.vintagestory.at/gamefiles/pre/vs_client_linux-x64_${final.version}.tar.gz";
-        hash = "sha256-KxOVEUvVLsSWptWMVpb2JhxtrCzQMWYCb1tkfUDZWLg=";
+        url = "https://cdn.vintagestory.at/gamefiles/unstable/vs_client_linux-x64_${final.version}.tar.gz";
+        hash = "sha256-st/8UsJROlt36IYoQ8kpIXTIyKlViWTBnqAmtLMFIyY=";
       };
 
       preFixup = makePrefixup pkgs.dotnet-runtime_8;
