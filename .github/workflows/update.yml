@@ -15,6 +15,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global push.default simple
+
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -45,9 +47,13 @@ jobs:
       - name: send PR
         run: |
           if [[ "$(git rev-list origin/main..HEAD --count)" -ne 0 ]]; then
+            branchname="push-$(git rev-parse --short HEAD)"
+            git switch -c "$branchname"
             gh pr create \
               --title "chore: updates" \
-              --body-file <(git log origin/main..HEAD --pretty=$'format:**%s**:\n```\n%b\n```')
+              --body-file <(git log origin/main..HEAD --pretty=$'format:**%s**:\n```\n%b\n```') \
+              --base main \
+              --head "$branchname"
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
