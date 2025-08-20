@@ -44,10 +44,10 @@ jobs:
           NIXPKGS_ALLOW_INSECURE: 1
       - name: send PR
         run: |
-          if [[ "$(git rev-list origin..HEAD --count)" -ne 0 ]]; then
+          if [[ "$(git rev-list origin/main..HEAD --count)" -ne 0 ]]; then
             gh pr create \
               --title "chore: updates" \
-              --body-file <(git log origin..HEAD --pretty=$'format:**%s**:\n```\n%b\n```')
+              --body-file <(git log origin/main..HEAD --pretty=$'format:**%s**:\n```\n%b\n```')
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
