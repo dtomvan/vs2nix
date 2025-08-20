@@ -1,0 +1,55 @@
+name: update
+permissions:
+  contents: write
+  pull-requests: write
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  update:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+      - name: configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      - name: setup nix
+        uses: cachix/install-nix-action@v31
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: update flake
+        run: |
+          tempfile="$(mktemp)"
+          nix flake update |& tee "$tempfile"
+          if [[ "$(git ls-files -m | wc -l)" -ne 0 ]]; then
+            printf 'chore: nix flake update\n%s' "$(cat "$tempfile")" \
+             | git commit -aF-
+          fi
+      - name: update sources
+        run: |
+          nix run
+          if [[ "$(git ls-files -m | wc -l)" -ne 0 ]]; then
+            printf 'chore: update sources\n%s' "$(nix run .#update-report)" \
+             | git commit -aF-
+          fi
+      - name: nix flake check
+        run: nix flake check -L --impure
+        env:
+          # TODO: remove on VS 1.21
+          NIXPKGS_ALLOW_INSECURE: 1
+      - name: send PR
+        run: |
+          if [[ "$(git rev-list origin..HEAD --count)" -ne 0 ]]; then
+            gh pr create \
+              --title "chore: updates" \
+              --body-file <(git log origin..HEAD --pretty=$'format:**%s**:\n```\n%b\n```')
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

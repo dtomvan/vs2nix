@@ -1,0 +1,29 @@
+name: check
+permissions:
+  contents: read
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  check:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      - name: setup nix
+        uses: cachix/install-nix-action@v31
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: nix flake check
+        run: nix flake check -L --impure
+        env:
+          # TODO: remove on VS 1.21
+          NIXPKGS_ALLOW_INSECURE: 1
+      - name: eval mods
+        run: nix eval .#legacyPackages 
