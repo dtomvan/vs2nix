@@ -20,6 +20,10 @@ I haven't documented, say, the nixos module at all yet.
 > when needed, whereas currently I do it "all at once". See for the
 > implementation of the updater `parts/updater.nix`.
 
+**UPDATE 2025-08-20**: I've enabled github actions to update the mods nightly,
+so expect updates more frequently. I will keep manually updating and testing
+the game itself though.
+
 ## Usage
 
 In a flake:
