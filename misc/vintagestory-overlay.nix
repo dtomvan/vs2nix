@@ -2,7 +2,7 @@
 let
   wrapperFlags = pkgs.lib.trim ''
     --prefix LD_LIBRARY_PATH : "''${runtimeLibs[@]}" \
-    --set-default mesa_glthread true \
+    --set-default mesa_glthread true
   '';
 
   # dotnet isn't overridable yet, so just do it like this right now
