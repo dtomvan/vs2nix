@@ -1,5 +1,12 @@
 [
   {
+    "pname": "AbsoluteProspecting",
+    "version": "1.500.3",
+    "description": "Absolute Prospecting",
+    "url": "https://moddbcdn.vintagestory.at/AbsoluteProspecting__b2afb0d84c93e6243dd0959827b1bcdd.zip",
+    "hash": "sha256-7bLXzOAG46vO79OqOlEwx3haHrpVhbyeTYodf9wVHFE="
+  },
+  {
     "pname": "BetterProspecting",
     "version": "1.7.0",
     "description": "BetterProspecting",
@@ -432,13 +439,6 @@
     "description": "Brick and Shingles Mold",
     "url": "https://moddbcdn.vintagestory.at/BrickMold_1.2.0_8c62e72d24a9f05f40bf04566058f4b4.zip",
     "hash": "sha256-mFbZxDzysLMns+lq0xZIOd5YUaRxXbzVGNIRXorcuUY="
-  },
-  {
-    "pname": "bugnetcompatibility",
-    "version": "1.0.1",
-    "description": "Bug Net Compatibility",
-    "url": "https://moddbcdn.vintagestory.at/BugNetCompatibility__6562cae7a596cb378234d4c3b63298cf.zip",
-    "hash": "sha256-1DLk6fjZBs599HIIfJK2gs2Bz1lvq4/el/8Gc8O5ULY="
   },
   {
     "pname": "bullseyecontinued",
@@ -974,10 +974,10 @@
   },
   {
     "pname": "fatemplar",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "Forgotten Armory: Templar Style",
-    "url": "https://moddbcdn.vintagestory.at/Forgotten+Armory_Tem_816ad5fa633115e1bfbe1a422dbc0121.zip",
-    "hash": "sha256-YDZcND3JdXFC6txyo5ZO6u7/XgmYRxZf1mbClmARmgo="
+    "url": "https://moddbcdn.vintagestory.at/Forgotten+Armory_Tem_d39b94249e6d34dbe372abada7b428b8.zip",
+    "hash": "sha256-Yj1yHZ8MTttcaHbBgpFhCG6m3Agkz60aT2eI0fp6WAA="
   },
   {
     "pname": "felinae",
@@ -1296,10 +1296,10 @@
   },
   {
     "pname": "hydrateordiedrate",
-    "version": "2.1.6",
+    "version": "2.2.6",
     "description": "Hydrate or Diedrate",
-    "url": "https://moddbcdn.vintagestory.at/hydrateordiedrate_2._4e419ab13c396fae5a46f0d1bdb0a58a.zip",
-    "hash": "sha256-n6eFAH3gTeZSmL/63L+KU3ISK+mA+sQa+Vea0wnZnCA="
+    "url": "https://moddbcdn.vintagestory.at/hydrateordiedrate_2._10b2292071b836a6aaaa9b36e576dde0.zip",
+    "hash": "sha256-kJJ137b965fLPzp7yqCpVFWxk2HWCwFgi3fWMnkOVGs="
   },
   {
     "pname": "immersivecorpsedrop",
@@ -1450,10 +1450,10 @@
   },
   {
     "pname": "levelup",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "description": "Level UP",
-    "url": "https://moddbcdn.vintagestory.at/levelup_2.0.4_e07a83b0212f97d6c66cc83fc64f0abd.zip",
-    "hash": "sha256-RACSzmRKyeegCHVUqysAjfUftzuQ0A0OGOzkxc/unZM="
+    "url": "https://moddbcdn.vintagestory.at/levelup_2.0.5_b8c840a52dd82798e406cf7373a6b773.zip",
+    "hash": "sha256-uxHchxcY17lGm1F8zzOX1dI62CXGN2YHioi3XixXgCA="
   },
   {
     "pname": "lichen",
