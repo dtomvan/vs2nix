@@ -1,5 +1,6 @@
 { pkgs, ... }:
 let
+  # TODO: remove after next nixpkgs bump
   wrapperFlags = pkgs.lib.trim ''
     --prefix LD_LIBRARY_PATH : "''${runtimeLibs[@]}" \
     --set-default mesa_glthread true
@@ -23,35 +24,18 @@ let
 
   vintagestory = pkgs.vintagestory.overrideAttrs (
     final: prev: {
-      version = "1.20.12";
+      version = "1.21.0";
 
       src = pkgs.fetchzip {
         url = "https://cdn.vintagestory.at/gamefiles/stable/vs_client_linux-x64_${final.version}.tar.gz";
-        hash = "sha256-GlxBpnQBk1yZfh/uPK83ODrwn/VoORA3gGkvcXy+nV8=";
-      };
-
-      preFixup = makePrefixup pkgs.dotnet-runtime_7;
-    }
-  );
-
-  vintagestory-beta = pkgs.vintagestory.overrideAttrs (
-    final: prev: {
-      version = "1.21.0-rc.5";
-
-      buildInputs =
-        (prev.buildInputs or [ ])
-        ++ (with pkgs; [
-          wayland
-        ]);
-
-      src = pkgs.fetchzip {
-        url = "https://cdn.vintagestory.at/gamefiles/unstable/vs_client_linux-x64_${final.version}.tar.gz";
-        hash = "sha256-w6bk3ROS62wyEa+3VChGjEaYwzkrNgkFCldW3J8QRdU=";
+        hash = "sha256-Adp6rOuJcjRHNjDm/nP/t8koYFgv6mRdHuvg0fuKzbA=";
       };
 
       preFixup = makePrefixup pkgs.dotnet-runtime_8;
     }
   );
+
+  vintagestory-beta = vintagestory; # no current rc or pre available
 in
 {
   inherit vintagestory vintagestory-beta;
