@@ -35,7 +35,18 @@ let
     }
   );
 
-  vintagestory-beta = vintagestory; # no current rc or pre available
+  vintagestory-beta = pkgs.vintagestory.overrideAttrs (
+    final: prev: {
+      version = "1.21.1-rc.1";
+
+      src = pkgs.fetchzip {
+        url = "https://cdn.vintagestory.at/gamefiles/unstable/vs_client_linux-x64_${final.version}.tar.gz";
+        hash = "sha256-jTImsd8KQNTAL8MFUl7pp3H/URyPGzvh1VKRTQPVc0c=";
+      };
+
+      preFixup = makePrefixup pkgs.dotnet-runtime_8;
+    }
+  );
 in
 {
   inherit vintagestory vintagestory-beta;
