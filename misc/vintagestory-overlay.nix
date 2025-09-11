@@ -24,29 +24,30 @@ let
 
   vintagestory = pkgs.vintagestory.overrideAttrs (
     final: prev: {
-      version = "1.21.0";
+      version = "1.21.1";
 
       src = pkgs.fetchzip {
         url = "https://cdn.vintagestory.at/gamefiles/stable/vs_client_linux-x64_${final.version}.tar.gz";
-        hash = "sha256-Adp6rOuJcjRHNjDm/nP/t8koYFgv6mRdHuvg0fuKzbA=";
+        hash = "sha256-M5IRghH980f7taxwvXbvKT+ggNIz47h93VFhm49ZAE0=";
       };
 
       preFixup = makePrefixup pkgs.dotnet-runtime_8;
     }
   );
 
-  vintagestory-beta = pkgs.vintagestory.overrideAttrs (
-    final: prev: {
-      version = "1.21.1-rc.1";
-
-      src = pkgs.fetchzip {
-        url = "https://cdn.vintagestory.at/gamefiles/unstable/vs_client_linux-x64_${final.version}.tar.gz";
-        hash = "sha256-jTImsd8KQNTAL8MFUl7pp3H/URyPGzvh1VKRTQPVc0c=";
-      };
-
-      preFixup = makePrefixup pkgs.dotnet-runtime_8;
-    }
-  );
+  vintagestory-beta = vintagestory;
+  # vintagestory-beta = pkgs.vintagestory.overrideAttrs (
+  #   final: prev: {
+  #     version = "1.21.1-rc.1";
+  #
+  #     src = pkgs.fetchzip {
+  #       url = "https://cdn.vintagestory.at/gamefiles/unstable/vs_client_linux-x64_${final.version}.tar.gz";
+  #       hash = "sha256-jTImsd8KQNTAL8MFUl7pp3H/URyPGzvh1VKRTQPVc0c=";
+  #     };
+  #
+  #     preFixup = makePrefixup pkgs.dotnet-runtime_8;
+  #   }
+  # );
 in
 {
   inherit vintagestory vintagestory-beta;
