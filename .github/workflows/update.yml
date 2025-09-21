@@ -53,6 +53,7 @@ jobs:
             gh pr create \
               --title "chore: updates" \
               --body-file <(git log origin/main..HEAD --pretty=$'format:**%s**:\n```\n%b\n```') \
+              --reviewer dtomvan \
               --base main \
               --head "$branchname"
           fi
