@@ -20,7 +20,7 @@
                 ]
 
                 # more or less 10k downloads or more
-                let num_mods = 400
+                let num_mods = 500
 
                 # HACK: idk if this is the right way to do fallbacks in nu
                 http get --headers $headers "https://mods.vintagestory.at/api/mods?orderby=downloads"
