@@ -20,6 +20,8 @@ jobs:
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
       - name: nix flake check
-        run: nix flake check -L
+        run: nix flake check -L --impure
+        env:
+          NIXPKGS_ALLOW_UNFREE: 1
       - name: eval mods
-        run: nix eval .#legacyPackages 
+        run: nix eval .#legacyPackages

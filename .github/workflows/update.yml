@@ -40,7 +40,9 @@ jobs:
              | git commit -aF-
           fi
       - name: nix flake check
-        run: nix flake check -L
+        run: nix flake check -L --impure
+        env:
+          NIXPKGS_ALLOW_UNFREE: 1
       - name: send PR
         run: |
           if [[ "$(git rev-list origin/main..HEAD --count)" -ne 0 ]]; then
