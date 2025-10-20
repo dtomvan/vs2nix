@@ -40,10 +40,7 @@ jobs:
              | git commit -aF-
           fi
       - name: nix flake check
-        run: nix flake check -L --impure
-        env:
-          # TODO: remove on VS 1.21
-          NIXPKGS_ALLOW_INSECURE: 1
+        run: nix flake check -L
       - name: send PR
         run: |
           if [[ "$(git rev-list origin/main..HEAD --count)" -ne 0 ]]; then

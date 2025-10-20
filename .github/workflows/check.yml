@@ -20,9 +20,6 @@ jobs:
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
       - name: nix flake check
-        run: nix flake check -L --impure
-        env:
-          # TODO: remove on VS 1.21
-          NIXPKGS_ALLOW_INSECURE: 1
+        run: nix flake check -L
       - name: eval mods
         run: nix eval .#legacyPackages 
