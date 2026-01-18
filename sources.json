@@ -120,10 +120,10 @@
   },
   {
     "pname": "aldiclasses",
-    "version": "1.8.4",
+    "version": "1.8.7",
     "description": "Aldi's Classes",
-    "url": "https://moddbcdn.vintagestory.at/aldiclasses1.8.4_3bfcc893d43dcdc12a73597552166567.zip",
-    "hash": "sha256-tJWpZbfti0fM0D4whKesBOhuaGn7dYM9+cYnfT9Pr1A="
+    "url": "https://moddbcdn.vintagestory.at/aldiclasses1.8.7_ea2cf846f613b8c3d5d134a840aaba3e.zip",
+    "hash": "sha256-3I2IjiG3OkDANDxrQ9gSnmrZl28Cyw4ZMHb6fB9yWL8="
   },
   {
     "pname": "allclasses",
@@ -211,10 +211,10 @@
   },
   {
     "pname": "armory",
-    "version": "1.8.3",
+    "version": "1.9.2",
     "description": "Combat Overhaul: Armory",
-    "url": "https://moddbcdn.vintagestory.at/armory_1.8.3_822f87688c7952c0d0f377e1c371810d.zip",
-    "hash": "sha256-jgSnM9xmcTMaw+0xwHoDx92LK9O89XoQtKOLnBZqwfA="
+    "url": "https://moddbcdn.vintagestory.at/armory_1.9.2_19f430e7252f797cf82a7694b354e3d2.zip",
+    "hash": "sha256-FestdcDqoXJPkEWJZNqIGrBMfHvumtt6da+XjOU9Edo="
   },
   {
     "pname": "arrowbarrels",
@@ -271,13 +271,6 @@
     "description": "Axle in blocks",
     "url": "https://moddbcdn.vintagestory.at/axleinblocks_1.21.1_8e2bdc0738c29a4b21dd4f3fa5cc64a3.zip",
     "hash": "sha256-PrdnGOKTucplDN4dH/TY4gTrhTCf64t/06e42UpjwGQ="
-  },
-  {
-    "pname": "backpackpack",
-    "version": "1.0.3",
-    "description": "BackpackPack",
-    "url": "https://moddbcdn.vintagestory.at/BackpackPackStandard_9f41f47337c2b0e7edc5b4abc7f94135.zip",
-    "hash": "sha256-aDwWq24+xXsC/8jnWaOhX2lUz0w1CaQgASdvXddTpO4="
   },
   {
     "pname": "backpackpackplus",
@@ -351,10 +344,10 @@
   },
   {
     "pname": "bettererprospecting",
-    "version": "2.1.0",
+    "version": "3.1.3",
     "description": "BetterEr Prospecting",
-    "url": "https://moddbcdn.vintagestory.at/bettererprospecting__d721f1c30a9000eb1c813dbbe15d0975.zip",
-    "hash": "sha256-8Lg9Ma21axNeRu14s1rWoLeIIboS5U6iuQuu1IsBxXM="
+    "url": "https://moddbcdn.vintagestory.at/bettererprospecting__f3566b7af627c12265945840fc66d0ab.zip",
+    "hash": "sha256-Bd5lzA0aEvFRoLFMsjdoz6sqpsHJBbzoOZb8V9y6RqU="
   },
   {
     "pname": "betterfirepit",
@@ -386,10 +379,10 @@
   },
   {
     "pname": "betterruins",
-    "version": "0.5.5",
+    "version": "0.5.6",
     "description": "BetterRuins",
-    "url": "https://moddbcdn.vintagestory.at/BetterRuinsv0.5.5_de5ec7dcb917135793d0ef50ff6e5f38.zip",
-    "hash": "sha256-fzBz89p9MuxE+rpwOmCylZvYMJBhhhaExZNZT4qIqlk="
+    "url": "https://moddbcdn.vintagestory.at/BetterRuinsv0.5.6_b4d1fc437533610f6fc1ecb15a91fe45.zip",
+    "hash": "sha256-dqMbhKWZWGgF0QWPYrr8eDl/V0Upynh/ALdeHtVdAOk="
   },
   {
     "pname": "bettersticks",
@@ -442,10 +435,10 @@
   },
   {
     "pname": "blacksmithname",
-    "version": "1.2.5",
+    "version": "1.2.7",
     "description": "Blacksmith name",
-    "url": "https://moddbcdn.vintagestory.at/blacksmithname_1.2.5_498e4d27b9123d2d863b27a08667af55.zip",
-    "hash": "sha256-Ug12SXlxfIUqhkeXr2dvaDyp2AMZ7W/IEKz8vOVJqSs="
+    "url": "https://moddbcdn.vintagestory.at/blacksmithname_1.2.7_523ea8b266ebb1226b0b11a519e7cdf5.zip",
+    "hash": "sha256-nrLfaPKcQ7hlDgoPwtmn8DMWA7+08sh5mzTCik/yeZA="
   },
   {
     "pname": "blocksoverlay",
@@ -554,17 +547,17 @@
   },
   {
     "pname": "caninae",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Fauna of the Stone Age: Caninae",
-    "url": "https://moddbcdn.vintagestory.at/FotSA-Caninae-v1.1.1_7fb195e7d991ee48f8c38d584bcca5a0.zip",
-    "hash": "sha256-hH+faK3fmVtoMyupOkFaCr/MOPYpSqud84Znzfr3jgA="
+    "url": "https://moddbcdn.vintagestory.at/FotSA-Caninae-v1.1.2_e6deac5f33404390677774624327edfa.zip",
+    "hash": "sha256-gGwJgAEmll7+ecMJr2KwMRltHcQIKv4HsOvF6PRyF1s="
   },
   {
     "pname": "canjewelry",
-    "version": "0.5.18",
+    "version": "0.5.19",
     "description": "CAN Jewelry",
-    "url": "https://moddbcdn.vintagestory.at/canjewelry_0.5.18_59ffee9bc81bbf58b3ad2b4666513c70.zip",
-    "hash": "sha256-ffPxuNANS7EM3PV7YTmw8yjnjjC5lzaFkq9ZhwbZ8Yo="
+    "url": "https://moddbcdn.vintagestory.at/canjewelry_0.5.19_1ad693cb64fd74ba7d875cbb5cebba32.zip",
+    "hash": "sha256-a2pBG9maCUGxExppceEAX1b7AJeCoGeun0356xg5naA="
   },
   {
     "pname": "canmailbox",
@@ -764,10 +757,10 @@
   },
   {
     "pname": "coinage",
-    "version": "1.19.1",
+    "version": "1.20.0",
     "description": "Coinage",
-    "url": "https://moddbcdn.vintagestory.at/coinage-1.19.1_ab24f4f76e8ddb3364239f6760e2fb3a.zip",
-    "hash": "sha256-gBElYrTDHewDPYiFmuhECOV6mEFrARv3o4J67Kf0rwQ="
+    "url": "https://moddbcdn.vintagestory.at/coinage-1.20.0_f6a4eceb256486253dfd4a3d8cefa61e.zip",
+    "hash": "sha256-uUeSf6Io8Ic1PXItEzZPQNDJamKCUOmYCink6C61rQ0="
   },
   {
     "pname": "colorfulcandles",
@@ -785,10 +778,10 @@
   },
   {
     "pname": "combatoverhaul",
-    "version": "0.12.7",
+    "version": "0.14.1",
     "description": "Combat Overhaul",
-    "url": "https://moddbcdn.vintagestory.at/combatoverhaul_0.12._5f1ba0e0e719f498aed0ad047006fce4.zip",
-    "hash": "sha256-Y/ATooBlf8qu4Ukf1SvNipDt1kyNZgJi2Mu9qBmg3Ko="
+    "url": "https://moddbcdn.vintagestory.at/combatoverhaul_0.14._23cea83f5676a72fd4cf67acccab5047.zip",
+    "hash": "sha256-UnExm69hDcN4baGS4s6HNEJEQGkOJTYuPj/vCz7samo="
   },
   {
     "pname": "commonlib",
@@ -806,10 +799,10 @@
   },
   {
     "pname": "configlib",
-    "version": "1.10.12",
+    "version": "1.10.13",
     "description": "Config lib",
-    "url": "https://moddbcdn.vintagestory.at/configlib_1.10.12_b838b2f34af16116ad3b584130a60470.zip",
-    "hash": "sha256-JEqHQAom6l4Gw2Qn9AmkKxq+j08PQqiw/iVDyrjjFUQ="
+    "url": "https://moddbcdn.vintagestory.at/configlib_1.10.13_97817441c05e1790bc85ee2e04530f3c.zip",
+    "hash": "sha256-KBr14BK2VzG8D/EPneWtvlLoR6/YpEC4Y8r8+ac51cw="
   },
   {
     "pname": "configureeverything",
@@ -820,10 +813,10 @@
   },
   {
     "pname": "conquest",
-    "version": "0.0.36",
+    "version": "1.0.0",
     "description": "Conquest VS Edition",
-    "url": "https://moddbcdn.vintagestory.at/Conquest+VS+Edition+_386cc6a9d50b52414f4a8d32ad063b9b.zip",
-    "hash": "sha256-hO2b+EMqvq+24gmrbZkQ9SCsLhk9jznOQtbZLnyi5h0="
+    "url": "https://moddbcdn.vintagestory.at/Conquest+VS+Edition+_af0189bde411870e42e0dc1c62b67117.zip",
+    "hash": "sha256-rkKMP0CxjNyXQ1z0g4xQEg5JOYJr+bb8Ei4GNQbt4lo="
   },
   {
     "pname": "containersbundle",
@@ -896,13 +889,6 @@
     "hash": "sha256-AQcr8PMw7QHgwAeaW7rblwF3GlN7vNMGBTsVbv+ETPk="
   },
   {
-    "pname": "decoclock",
-    "version": "0.10.1",
-    "description": "DecO'Clock",
-    "url": "https://moddbcdn.vintagestory.at/DecoClock_VS1.20.7_n_dc19f702ce676f11117ddf727b3636f5.zip",
-    "hash": "sha256-0yGNd3Zzcj4Ab86UFB39d93MS5Xf+0nVersuwpE+36Y="
-  },
-  {
     "pname": "decor",
     "version": "1.3.1",
     "description": "Decor Bazaar",
@@ -929,13 +915,6 @@
     "description": "Diverse Diets",
     "url": "https://moddbcdn.vintagestory.at/DiverseDiets-v1.0.3_16f8c900c5cbe3c5190989915fc66abf.zip",
     "hash": "sha256-nzzwZQftFakJAc5Tqnm21MEs/ExlCINJATxV2Gy8xXk="
-  },
-  {
-    "pname": "divisionoflabor",
-    "version": "1.0.8",
-    "description": "Division of Labor",
-    "url": "https://moddbcdn.vintagestory.at/Division+of+Labor_39d2908b3ee22b6c0e99823d45aee375.zip",
-    "hash": "sha256-2O2fSC1vdAtXzclVOmXsEnvIwAMIt6O3iIi+0ZNSrLo="
   },
   {
     "pname": "dodgemaster",
@@ -995,17 +974,17 @@
   },
   {
     "pname": "electricalprogressivebasics",
-    "version": "2.6.2",
+    "version": "2.6.4",
     "description": "Electrical Progressive: Basics",
-    "url": "https://moddbcdn.vintagestory.at/electricalprogressiv_ea4cb163f3b29dbc2943f928416ad8b5.zip",
-    "hash": "sha256-noxGQtUEWaAJDgcMYHBChUHmnnQfZlt+mjyUEkUfNNA="
+    "url": "https://moddbcdn.vintagestory.at/electricalprogressiv_b1e2a52be202ea554f05bd64e0741a2c.zip",
+    "hash": "sha256-F5yJpv1HfGxJbkMyEZ0nP7YcGCMlEfPWzpb+6H0Z0hg="
   },
   {
     "pname": "electricalprogressivecore",
-    "version": "2.6.3",
+    "version": "2.6.4",
     "description": "Electrical Progressive: Core",
-    "url": "https://moddbcdn.vintagestory.at/electricalprogressiv_d6c439f12b192b36ee4bf85c78a406c9.zip",
-    "hash": "sha256-YAPavSLoQA0pDSiZUDhQS2w2cY+4F2fcQRYaN1pCknI="
+    "url": "https://moddbcdn.vintagestory.at/electricalprogressiv_94529e0bf5bea21bfd80bc1af347be08.zip",
+    "hash": "sha256-TFnZftAIXURk6i5e5WWavnnm8FDqQ4PjiDN8AHD0y/8="
   },
   {
     "pname": "electricalprogressiveequipment",
@@ -1093,10 +1072,10 @@
   },
   {
     "pname": "expandedfoods",
-    "version": "2.0.0-dev.6",
+    "version": "2.0.0-dev.7",
     "description": "Expanded Foods 2.0.0-dev",
-    "url": "https://moddbcdn.vintagestory.at/ExpandedFoods+2.0.0-_179cf4acf9484eb1aa07cb4c1750747c.zip",
-    "hash": "sha256-j+7hc/re0Aw3rtr846y1jIvaYIaEeH2rsWR7fkuXLLE="
+    "url": "https://moddbcdn.vintagestory.at/ExpandedFoods+2.0.0-_d1a911df38ef2a8bb18aa83bd7ce8e41.zip",
+    "hash": "sha256-2nUwbZAO10kUDUZiDd4h73cFW9ovTZHvyCgkXHfd7Tc="
   },
   {
     "pname": "expandedmolds",
@@ -1457,10 +1436,10 @@
   },
   {
     "pname": "geoaddons",
-    "version": "1.4.5",
+    "version": "1.4.6",
     "description": "Geology Additions ",
-    "url": "https://moddbcdn.vintagestory.at/GeologyAdditions+1.4_21fcaff33d2862ed254504b35cea5a62.zip",
-    "hash": "sha256-TtHteslU7yClvwziVah8Kz59kSpuDhRtnk1g1kIPPEA="
+    "url": "https://moddbcdn.vintagestory.at/GeologyAdditions+1.4_3e2c7e5de724396122f0481a1d36f07a.zip",
+    "hash": "sha256-GLjjrQqtVYhUnVfBN53s05PCPMeklNh57mI/VoUJN9w="
   },
   {
     "pname": "gimmeoneseedplz",
@@ -1478,10 +1457,10 @@
   },
   {
     "pname": "gloomeclasses",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "GlooMeClasses",
-    "url": "https://moddbcdn.vintagestory.at/gloomeclasses_1.2.2_10a983b348a6bcd024efbe952eb861be.zip",
-    "hash": "sha256-fo1iRK0BEQYlVwMJDBT3q7o+N6wWF6Jg3nMrihWTGAg="
+    "url": "https://moddbcdn.vintagestory.at/gloomeclasses-1.2.3_773e00c773399b662a9205f2e0853320.zip",
+    "hash": "sha256-daR/Xw49A9FZffOHrPHFFtf667D75Jisd476A+LuVWY="
   },
   {
     "pname": "goblinears",
@@ -1590,10 +1569,10 @@
   },
   {
     "pname": "hit",
-    "version": "2.3.1",
+    "version": "2.4.3",
     "description": "Harper's Immersive Tools",
-    "url": "https://moddbcdn.vintagestory.at/hit_2.3.1_3530936af8dcfa83e9ce1b51a0bea68c.zip",
-    "hash": "sha256-EVbkn9ezwdCX9ea2OxmXSG94LaZG96ns1/FF6HCuOZo="
+    "url": "https://moddbcdn.vintagestory.at/hit_2.4.3_cb9728591d53c019f5db5565fe084da7.zip",
+    "hash": "sha256-mBOQa5zRowBrNSpTolBf4os/rJzaFmsIVxsjQLPq6sM="
   },
   {
     "pname": "hqzlights",
@@ -1618,10 +1597,10 @@
   },
   {
     "pname": "hydrateordiedrate",
-    "version": "2.3.5",
+    "version": "2.3.6",
     "description": "Hydrate or Diedrate",
-    "url": "https://moddbcdn.vintagestory.at/hydrateordiedrate_2._c74a6b75428995f8eb308a634ffed4db.zip",
-    "hash": "sha256-8TS0KaaWdmT7w2JvDpWbgK9ZRU7Yk2iY5x+OPx0SRio="
+    "url": "https://moddbcdn.vintagestory.at/hydrateordiedrate_2._8a369f195600377a0d17fbb8b6f9c445.zip",
+    "hash": "sha256-iR6vzcN4aWfyZEibGo5rG72kmy1DRiYXxw6vtrvO6yM="
   },
   {
     "pname": "immersivecorpsedrop",
@@ -1632,10 +1611,10 @@
   },
   {
     "pname": "immersivelanterns",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "Salty´s Immersive: Lanterns",
-    "url": "https://moddbcdn.vintagestory.at/ImmersiveLanterns_0._eb7d69bcc8b9598d21b1cdd8109397f4.zip",
-    "hash": "sha256-jdzX1cDiOa47EpBpb1OVNtAqT6dbadddgh5WbQFSNS0="
+    "url": "https://moddbcdn.vintagestory.at/ImmersiveLanterns_0._e63e0ece43ed6c7259ab979bed708392.zip",
+    "hash": "sha256-HX/xKLSkT4vIV7PHiKRfbY3lhULsvb/VR/B/v2fOwNY="
   },
   {
     "pname": "immersivemining",
@@ -1664,13 +1643,6 @@
     "description": "Immersive Wood Sawing",
     "url": "https://moddbcdn.vintagestory.at/immersivewoodsawing__550e71d33a57c3eaffe018a3d234c873.zip",
     "hash": "sha256-yCFahl/z8Wc9ylHTvHICxoJRg0NbU7fD7O32rx9jWSs="
-  },
-  {
-    "pname": "improvedhandbookrecipes",
-    "version": "1.1.3",
-    "description": "Improved Handbook Recipes",
-    "url": "https://moddbcdn.vintagestory.at/ImprovedHandbookReci_b9e03e4bd72ff82d6ccedc19e2fc170b.zip",
-    "hash": "sha256-k+w3ncW0KYt6QEHrz6q9/u0BQvXSYuITW+U+cqyX4i0="
   },
   {
     "pname": "indappledgroves",
@@ -1800,10 +1772,10 @@
   },
   {
     "pname": "krpgenchantment",
-    "version": "1.2.22",
+    "version": "1.2.23",
     "description": "KRPG Enchantment",
-    "url": "https://moddbcdn.vintagestory.at/krpgenchantment_1.2._c4282d2cd488d1103274b29dc1235906.zip",
-    "hash": "sha256-z/HXBciZxCLMlXF7ZJ15/5lVrg72wZmITOFZj5hO6+I="
+    "url": "https://moddbcdn.vintagestory.at/krpgenchantment_1.2._cd25137b1241b813e45ac52829a5ff25.zip",
+    "hash": "sha256-P+YdL/0OAMriiIXfyxH5B6M9xwV8M+EogyXHZSAbXTg="
   },
   {
     "pname": "landformoverhaul",
@@ -1877,10 +1849,10 @@
   },
   {
     "pname": "machairodontinae",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Fauna of the Stone Age: Machairodontinae",
-    "url": "https://moddbcdn.vintagestory.at/FotSA-Machairodontin_5f768f90682522107d681e183f4043ad.zip",
-    "hash": "sha256-PXZ6pSc8g6KdpH2XelvT9XZGRlYOQA3Pg22j5ZKvaWI="
+    "url": "https://moddbcdn.vintagestory.at/FotSA-Machairodontin_b5caf69ea1284fadc0d77d6f9b17cc1d.zip",
+    "hash": "sha256-UpaCPXefWeULdD47zxUPsZoygh9MAhGrOpR1/gPQG5w="
   },
   {
     "pname": "madgnomeserver",
@@ -1912,17 +1884,17 @@
   },
   {
     "pname": "maltiezcrossbows",
-    "version": "1.6.9",
+    "version": "1.7.0",
     "description": "Crossbows",
-    "url": "https://moddbcdn.vintagestory.at/maltiezcrossbows_1.6_d31b2fb7df473f50fd6d8b559bcf0d9c.zip",
-    "hash": "sha256-BkDAGa9YpXbQlsAuhSHWwK02DykC4nQhp7KGwN4KrcE="
+    "url": "https://moddbcdn.vintagestory.at/maltiezcrossbows_1.7_550243af3b83ddae6810990a6ebd5e53.zip",
+    "hash": "sha256-F7yuFAYon7GMhIo1s25cJLC17jbQDXxJgdATojIU5hY="
   },
   {
     "pname": "maltiezfirearms",
-    "version": "1.5.5",
+    "version": "1.6.2",
     "description": "Firearms",
-    "url": "https://moddbcdn.vintagestory.at/maltiezfirearms_1.5._df5eb77f0a07682fa4dab6b8828ca8cf.zip",
-    "hash": "sha256-D2nukHpOGTjDrfBFVMUU8JPC+uIS5LvJKpxH0cH/wgk="
+    "url": "https://moddbcdn.vintagestory.at/maltiezfirearms_1.6._4865eb1ccfe5d8bb8fbbecd9b3fb57f8.zip",
+    "hash": "sha256-KbePBV6rEh6SW9BcjPlovpxRAiYziCzNV/b34fkvh/U="
   },
   {
     "pname": "manidae",
@@ -1940,10 +1912,10 @@
   },
   {
     "pname": "mannyextrafirearms",
-    "version": "0.7.2",
+    "version": "0.7.5",
     "description": "Extra Firearms [FORK]",
-    "url": "https://moddbcdn.vintagestory.at/extrafirearms_0.7.2_35af976b8212e211d0f1ca23f656f74b.zip",
-    "hash": "sha256-llOggppQmJfU9yDDnbl3xfa6ufEoYoPjeV0P8vLn5h8="
+    "url": "https://moddbcdn.vintagestory.at/extrafirearms_0.7.5_e17ed540490f8d14ce8386b750f2aefb.zip",
+    "hash": "sha256-Yyt9nzU6BHyfRAdlAUUBMyRUhNjraTF/QmgIV/oa5Wk="
   },
   {
     "pname": "manualdough",
@@ -2234,17 +2206,17 @@
   },
   {
     "pname": "overhaullib",
-    "version": "1.18.3",
+    "version": "1.19.6",
     "description": "Overhaul lib",
-    "url": "https://moddbcdn.vintagestory.at/overhaullib_1.18.3_3913270f1e2a02085912022af7bb7d55.zip",
-    "hash": "sha256-aX5kuOiFsQdzw52Sv4X/MoZGysf1zxYu4H8wLSoXas0="
+    "url": "https://moddbcdn.vintagestory.at/overhaullib_1.19.6_ae8e5846e2d90c24ceddca6705170902.zip",
+    "hash": "sha256-F9ORwd/AUQqxsptlnSRR1ey/rKF8qnUCxqx3XFbWpp0="
   },
   {
     "pname": "pantherinae",
-    "version": "1.2.7",
+    "version": "1.2.8",
     "description": "Fauna of the Stone Age: Pantherinae",
-    "url": "https://moddbcdn.vintagestory.at/FotSA-Pantherinae-v1_5ff02a2f7afefa3a659e035e175890ab.zip",
-    "hash": "sha256-yEf3REYvcK03kwqLVv5q9FbIa5IxwkpqkujekDCB04Y="
+    "url": "https://moddbcdn.vintagestory.at/FotSA-Pantherinae-v1_442ab4a9c0a64887801afcea9048eb3b.zip",
+    "hash": "sha256-eCidaW2a5BdmfDuAAwjJ3UZMdPwJxtDe9/f3bvXKS+4="
   },
   {
     "pname": "particlesplus",
@@ -2318,10 +2290,10 @@
   },
   {
     "pname": "playermodellib",
-    "version": "1.7.9",
+    "version": "1.9.5",
     "description": "Player Model lib",
-    "url": "https://moddbcdn.vintagestory.at/playermodellib_1.7.9_b1f59b0dc87e98a2ea7dcee9c4310b31.zip",
-    "hash": "sha256-25jMymhVjMB3E+JUE/q5PfyoJ2fVBkyYtt1njy4njME="
+    "url": "https://moddbcdn.vintagestory.at/playermodellib_1.9.5_6a1e5e8c9501f31caff4730fe8611d99.zip",
+    "hash": "sha256-678vTDigOs9M/Y4uDdvfY2ZlxJysW/+rJKpnpihCYCU="
   },
   {
     "pname": "plumpkins",
@@ -2371,6 +2343,13 @@
     "description": "QPTECH",
     "url": "https://moddbcdn.vintagestory.at/qptech1.15.4_f676c3b9ec877ead8a8d9c3f679464a7.zip",
     "hash": "sha256-TiEwOOCW6FFlYkMe4D0d6xbOH8ypDcDQ7ADzClCAzdo="
+  },
+  {
+    "pname": "quicklimepk",
+    "version": "1.1.1",
+    "description": "Quicklime in Kiln",
+    "url": "https://moddbcdn.vintagestory.at/QuicklimeInKilnv1.1._98d3170e8d570fdac59453baaa5b384a.zip",
+    "hash": "sha256-6ldv7SYbKhDDR6JKY9HSeWKEHUAvy/EnnF/22f2Dcjs="
   },
   {
     "pname": "quiversandsheaths",
@@ -2430,10 +2409,10 @@
   },
   {
     "pname": "rivers",
-    "version": "4.7.3",
+    "version": "4.7.4",
     "description": "Rivers",
-    "url": "https://moddbcdn.vintagestory.at/rivers_4.7.3_f1bb5857b47ac16188e093e1e7b759e4.zip",
-    "hash": "sha256-TD3mVlYYY5ki/1xVvp3qTpqn2YrylEJb1l56lGXFed8="
+    "url": "https://moddbcdn.vintagestory.at/rivers_4.7.4_fe272793d99f242367a85a0b283a6c72.zip",
+    "hash": "sha256-YDp887IDtPenlspHftz2l2jInYvGqAsM+UoLM3TwnxU="
   },
   {
     "pname": "rlldtco0001",
@@ -2493,10 +2472,10 @@
   },
   {
     "pname": "rustboundmagic",
-    "version": "3.1.17",
+    "version": "3.1.18",
     "description": "Rustbound Magic",
-    "url": "https://moddbcdn.vintagestory.at/rustboundmagic_3.1.1_2c8f8ca04eac71ecfb1c4aab8def67ac.zip",
-    "hash": "sha256-zVgq3xkYmovVD8WuZaNpvz7f2c0quGZLdgzoYlu0Ipg="
+    "url": "https://moddbcdn.vintagestory.at/rustboundmagic_3.1.1_4ea261d8397488380ea742e22091d9dd.zip",
+    "hash": "sha256-RnRhP609UgpQOj+w/iw1JZ7KlJcEC7DEcQMkWsH3sSw="
   },
   {
     "pname": "rustyshell",
@@ -2598,10 +2577,10 @@
   },
   {
     "pname": "skeletons",
-    "version": "0.5.1",
+    "version": "0.5.3",
     "description": "Skeletons",
-    "url": "https://moddbcdn.vintagestory.at/skeletons_0.5.1_754e31062bf8b95d17a8f3aa602f6b19.zip",
-    "hash": "sha256-Q/5ZaO4nInmTueAeZFTeuuvZFY0rD0UVaAzB249P3+s="
+    "url": "https://moddbcdn.vintagestory.at/skeletons_0.5.3_1b099a90f8810896c1f41203e1d0d4fd.zip",
+    "hash": "sha256-XTJ2Uk/Q6zaAsPdTuoOVYd52JNcSUARdiyxX62QIzVI="
   },
   {
     "pname": "sleepvote",
@@ -2679,6 +2658,13 @@
     "description": "Fauna of the Stone Age: Spheniscidae",
     "url": "https://moddbcdn.vintagestory.at/FotSA-Spheniscidae-v_740bfdf53499bdd1e8b6833fe4613bfa.zip",
     "hash": "sha256-GpCeGrGkBxGEvLlHEGeXLA4gVBjT7nFjwTc0PcHg6ZY="
+  },
+  {
+    "pname": "spinningwheel",
+    "version": "1.1.4",
+    "description": "Immersive Fibercraft",
+    "url": "https://moddbcdn.vintagestory.at/spinningwheel_1.1.4_c2b3fd3ad9dc7009f7fb7b8d0dfbdae5.zip",
+    "hash": "sha256-CU0QZoOn8y36b15x6wUGaTjpTeXVG/IciukD1aZQFmY="
   },
   {
     "pname": "spinosauridae",
@@ -2969,10 +2955,10 @@
   },
   {
     "pname": "torchholdersmithingplus",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Torch Holder Smithing Plus ",
-    "url": "https://moddbcdn.vintagestory.at/TorchHolderSmithingP_5f5314ab4ac11de18ee7ca1f253fbdc3.zip",
-    "hash": "sha256-oRq+pxSLPgrcNBKmso3WcLHOhDQ0BsOxMax8xr0ir7I="
+    "url": "https://moddbcdn.vintagestory.at/TorchHolderSmithingP_4dabc244199db785a353e8b1ec459f2d.zip",
+    "hash": "sha256-xZLUOdxGOacUS4St3ITthkZ/sWXqpTjUxqgWJg41b3I="
   },
   {
     "pname": "tpnet",
@@ -3094,6 +3080,13 @@
     "hash": "sha256-uuvIGEa3yjjGJZiUknJ82EISpEc8Wi/aq0sLIaf4f+s="
   },
   {
+    "pname": "valkyrjahair",
+    "version": "2.3.0",
+    "description": "Valkyrja's Hair Styler",
+    "url": "https://moddbcdn.vintagestory.at/valkyrjahair-2.3b_3a4ca710ca264a404e6ca293a11e776f.zip",
+    "hash": "sha256-up7WX46woQO/JICNSq8ySF6ZFTfqEK2qergESCAQz3g="
+  },
+  {
     "pname": "vanillaarmory",
     "version": "1.9.1",
     "description": "Vanilla armory",
@@ -3155,6 +3148,13 @@
     "description": "Vintage Engineering",
     "url": "https://moddbcdn.vintagestory.at/VintageEngineering-0_a82146ca969df9afbb757cf9a10542fb.zip",
     "hash": "sha256-0klUMCpIiemRjyNG7vrv5n0Qj5fuDvtC4hJ/GsLK3DI="
+  },
+  {
+    "pname": "vintageskavenrat",
+    "version": "1.4.5",
+    "description": "Skaven/Rat Player Model",
+    "url": "https://moddbcdn.vintagestory.at/Skaven+Rat+Player+Mo_7cedebc1782ca45a09d944b3285c42d7.zip",
+    "hash": "sha256-eCpYZH8kf2BgEzjwNxAKA6X86hqWLl9PXmGMBHELavE="
   },
   {
     "pname": "visibleore",
@@ -3270,10 +3270,10 @@
   },
   {
     "pname": "walkingstick",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "description": "Adventurer's Walking Stick",
-    "url": "https://moddbcdn.vintagestory.at/adventurers-walking-_88d5202df27e627a7cfce69ae1ac2c42.zip",
-    "hash": "sha256-BvqxuCCjavHs/dDurJtEIyDg1qa2pMzonaSlInDpO74="
+    "url": "https://moddbcdn.vintagestory.at/adventurers-walking-_89a055a8504157ead3e5347d373f10be.zip",
+    "hash": "sha256-aPo7WghhBgKW1gRnmVPnfVinMU2lMhuv2ERgcHgvkrg="
   },
   {
     "pname": "waypointtogethercontiued",
@@ -3396,10 +3396,10 @@
   },
   {
     "pname": "wrustbound",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Wilderlands Rustbound",
-    "url": "https://moddbcdn.vintagestory.at/Wilderlands+Rustboun_bb22e57500bb52a3bdb414a657e785c3.zip",
-    "hash": "sha256-IiiaOWMeLTEDPEKhk+c+wvchv6Z6sXBdtPmyf/heTao="
+    "url": "https://moddbcdn.vintagestory.at/Wilderlands+Rustboun_cf9277ddbc275293e022cfce2858a90d.zip",
+    "hash": "sha256-SJQigKkgLanz3kFfynvMVlHzO8tW8uAw1W9yBDfC7m0="
   },
   {
     "pname": "wwaymarkers",
